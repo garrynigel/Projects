@@ -1,0 +1,18 @@
+Performing grid search...
+pipeline: ['vect', 'tfidf', 'logReg']
+parameters:
+{'logReg__max_iter': (10, 50, 100),
+ 'tfidf__norm': ('l1', 'l2'),
+ 'tfidf__use_idf': (True, False),
+ 'vect__max_df': (0.5, 0.75, 1.0),
+ 'vect__ngram_range': ((1, 1), (1, 2))}
+Fitting 3 folds for each of 72 candidates, totalling 216 fits
+done in 53.816s
+/n
+Best score: 0.738
+Best parameters set:
+	logReg__max_iter: 10
+	tfidf__norm: 'l2'
+	tfidf__use_idf: True
+	vect__max_df: 0.5
+	vect__ngram_range: (1, 1)
